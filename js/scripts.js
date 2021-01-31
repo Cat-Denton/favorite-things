@@ -6,6 +6,19 @@ $(document).ready(function() {
     
     let favThings = [animal,food,color];
     alert(favThings);
+
+    let first = favThings[0];
+    let second = favThings[1];
+    let third = favThings[2];
+
+    let revThings = [];
+    revThings.push(third);
+    alert(revThings);
+    revThings.push(second);
+    alert(revThings);
+    revThings.push(first);
+    alert(revThings);
+    
     event.preventDefault();
   });
 });

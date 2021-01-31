@@ -5,7 +5,7 @@ $(document).ready(function() {
     const color = $("input#color").val();
     
     let favThings = [animal,food,color];
-    alert(favThings);
+    // alert(favThings);
 
     let first = favThings[0];
     let second = favThings[1];
@@ -13,12 +13,15 @@ $(document).ready(function() {
 
     let revThings = [];
     revThings.push(third);
-    alert(revThings);
+    // alert(revThings);
     revThings.push(second);
-    alert(revThings);
+    // alert(revThings);
     revThings.push(first);
-    alert(revThings);
-    
+    // alert(revThings);
+
+    $("#revColor").text(revThings[0]);
+    $("#revFood").text(revThings[1]);
+    $("#revAnimal").text(revThings[2]);
     event.preventDefault();
   });
 });
